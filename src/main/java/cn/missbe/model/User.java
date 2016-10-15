@@ -1,8 +1,5 @@
 package cn.missbe.model;
 
-
-import java.util.Date;
-
 public class User {	
     
     private String username;	
