@@ -18,7 +18,7 @@ public class ExcelPoiUtilTest {
 		assertEquals(true, flag);
 	}
 
-	@Test
+	@Ignore
 	public void test(){
 
             ExcelPoiUtil excelReader = new ExcelPoiUtil();

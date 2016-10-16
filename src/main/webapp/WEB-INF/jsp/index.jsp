@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>测试</title>
+<title>Home</title>
 </head>
 <body>
-Message:<%=request.getAttribute("message") %>
+这是管理界面首页
 </body>
 </html>

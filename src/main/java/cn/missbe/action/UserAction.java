@@ -15,7 +15,9 @@ public class UserAction extends ActionSupport {
 	@Override
 	public String execute(){
 		System.out.println("TEST:"+username);
-		
+		if(null == username || null == userpass){
+			return "input";
+		}
 		if(username.equals("admin") && userpass.equals("admin")){
 		
 			ServletActionContext.getRequest().setAttribute("message", "测试成功完成！");
@@ -24,7 +26,7 @@ public class UserAction extends ActionSupport {
 		}else{
 			System.out.println("未查询到该用户");
 			ServletActionContext.getRequest().setAttribute("message","用户名或者密码不正确^_^");
-			 return INPUT;
+			return INPUT;
 		}	  
 	}
 	public String getUserpass() {

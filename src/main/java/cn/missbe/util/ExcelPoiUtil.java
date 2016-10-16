@@ -113,7 +113,8 @@ public class ExcelPoiUtil {
      * @param InputStream
      * @return Map 包含单元格数据内容的Map对象
      */
-    private Map<Integer, String> readExcelContent(InputStream is) {
+    @SuppressWarnings("unused")
+	private Map<Integer, String> readExcelContent(InputStream is) {
         Map<Integer, String> content = new HashMap<Integer, String>();
         String str = "";
         
